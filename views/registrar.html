@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Mercado Liebre</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="logo-img">
+                <a href="/">
+                    <img src="./images/logo-mercado-liebre.svg" class="logo-img-ml" alt="ML">
+                </a>
+            </div>
+            <div class="search-bar">
+                <form action="" method="get">
+                    <div class="form-search-bar">
+                        <input type="search" placeholder="Buscar productos, marcas y más" class="submit-search" pattern="[a-zA-Z][a-zA-Z0-9-_.]{1,}" 
+                        required title="Ingrese al menos 2 caracteres">
+                        <button type="submit" class="submit-button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="header-text">
+                <p class="text-align-center"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="nav-bar">
+                <nav>
+                    <ul class="nav-bar-options-store">
+                        <li><a href="/">Ofertas</a></li>
+                        <li><a href="#">Tiendas Oficiales</a></li>
+                        <li><a href="#">Vender</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+                    <ul class="nav-bar-options-user">
+                        <li><a href="/registrar">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                        <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                        <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="burger-menu">
+                <a href="">
+                    <i class="fas fa-bars burger-menu-icon"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="./images/img-home-banner.jpg" class="img-banner" alt="">
+    </div>
+    <!-- Main -->
+    <main>
+        <section class="section-form">
+            <div class="form-register">
+                <h2 class="tittle-align-start blue">Registrate</h2>
+                <form action="" method="">
+                    <div class="form-input-div">
+                        <label for="fname" class="label-form">Nombre</label>
+                        <input type="text" id="fname" placeholder="Nombre" class="input-form" required maxlength="60">
+                    </div>
+                    <div class="form-input-div">
+                        <label for="flastname" class="label-form">Apellido</label>
+                        <input type="text" id="flastname" placeholder="Apellido" class="input-form" required maxlength="60">
+                    </div>
+                    <div class="form-input-div">
+                        <label for="fusername" class="label-form">Nombre de usuario</label>
+                        <input type="text" id="fusername" placeholder="Nombre de usuario" class="input-form" required
+                        pattern="[A-Za-z0-9_]{5,10}" title="5 caracteres como mínimo, 10 máximo, sin espacios" >
+                    </div>
+                    <div class="form-input-div">
+                        <label for="fpassword" class="label-form">Contraseña</label>
+                        <input type="password" id="fpassword" placeholder="Contraseña" class="input-form" 
+                        required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                        title="Debe contener al menos un número, una letra mayúscula, minúscula, y al menos 8 o más caracteres">
+                    </div>
+                    <div class="form-input-div">
+                        <label for="fpassword" class="label-form">Ingrese nuevamente su Contraseña</label>
+                        <input type="password" id="fpassword" placeholder="Contraseña" class="input-form" 
+                        required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                        title="Debe contener al menos un número, una letra mayúscula, minúscula, y al menos 8 o más caracteres">
+                    </div>
+                    <div class="form-input-div">
+                        <label for="femail" class="label-form">Correo electrónico</label>
+                        <input type="email" id="femail" placeholder="hola@mundo.com" class="input-form" required>
+                    </div>
+                    <div class="form-input-div">
+                        <label for="fborndate" class="label-form">Fecha de nacimiento</label>
+                        <input type="date" id="fborndate" class="input-form" required>
+                    </div>
+                    <div class="form-compartido">
+                        <div class="form-input-div-half">
+                            <label for="fcity" class="label-form">Ciudad</label>
+                            <input type="text" id="fcity" placeholder="Ciudad" class="input-form" required pattern="[A-Za-z\s]+">
+                        </div>
+                        <div class="form-input-div-half">
+                            <label for="fstate" class="label-form">Provincia</label>
+                            <input type="text" id="fstate" placeholder="Provincia" class="input-form" required pattern="[A-Za-z\s]+">
+                        </div>
+                    </div>
+                    <div class="form-compartido">
+                        <div class="form-input-div-half">
+                            <label for="fnumberaddress" class="label-form">Código postal</label>
+                            <input type="text" id="fnumberaddress" placeholder="1000" class="input-form" required pattern="[0-9]+" 
+                            title="Solamente números" maxlength="4" >
+                        </div>
+                    </div>
+                    <div class="form-input-div">
+                        <label for="faddress" class="label-form">Dirección</label>
+                        <input type="text" id="faddress" placeholder="Calle Falsa" class="input-form" required maxlength="60">
+                    </div>
+                    <div class="form-compartido">
+                        <div class="form-input-div-half">
+                            <label for="fnumberaddress" class="label-form">Altura</label>
+                            <input type="text" id="fnumberaddress" placeholder="123" class="input-form" pattern="[0-9]+" 
+                            title="Solamente números" required>
+                        </div>
+                        <div class="form-input-div-half">
+                            <label for="fnumberfloor" class="label-form">Piso</label>
+                            <input type="text" id="fnumberfloor" placeholder="PB" class="input-form" required>
+                        </div>
+                    </div>
+                    <div class="form-input-div">
+                        <label class="label-form label-form-radio">Perfil de Usuario</label>
+                        <div class="form-compartido">
+                            <div>
+                                <input type="radio" name="radiofusertype" id="usertypeseller">
+                                <label class="label-form" for="usertypeseller">Vendedor</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="radiofusertype" id="usertypesellerbuyer" checked>
+                                <label class="label-form" for="usertypesellerbuyer">Comprador</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-input-div">
+                        <label class="label-form label-form-radio">Intereses</label>
+                        <div class="form-checkbox">
+                            <input type="checkbox" name="checksport" id="checksport">
+                            <label class="label-form label-form-check" for="checksport">Deportes</label>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" name="checkelectro" id="checkelectro">
+                            <label class="label-form label-form-check" for="checkelectro">Electrodomésticos</label>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" name="checkhobby" id="checkhobby">
+                            <label class="label-form label-form-check" for="checkhobby">Hobbies</label>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" name="checkmoda" id="checkmoda">
+                            <label class="label-form label-form-check" for="checkmoda">Moda</label>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" name="checksalud" id="checksalud">
+                            <label class="label-form label-form-check" for="checksalud">Salud</label>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" name="checktecno" id="checktecno">
+                            <label class="label-form label-form-check" for="checktecno">Tecnología</label>
+                        </div>
+                        <input type="reset" name="Limpiar" class="forgetpass cleanbtn">
+                    </div>
+                    <input type="submit" value="Registrarme" class="form-button-reg">
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-sections">
+            <div class="footer-section">
+                <i class="fas fa-credit-card icons-blue"></i>
+                <div class="footer-section-tittle">
+                    <h4>Pagá con tarjeta o en efectivo</h4>
+                </div>
+                <div class="footer-section-text">
+                    <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                        puntos de pago. ¡Y siempre es seguro!</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <i class="fas fa-gift icons-blue"></i>
+                <div class="footer-section-tittle">
+                    <h4>Envío gratis desde $ 2.500</h4>
+                </div>
+                <div class="footer-section-text">
+                    <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                        productos. Es un beneficio de Mercado Puntos.</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <i class="fas fa-user-shield icons-blue"></i>
+                <div class="footer-section-tittle">
+                    <h4>Seguridad, de principio a fin</h4>
+                </div>
+                <div class="footer-section-text">
+                    <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                        porque estás siempre protegid@.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <div class="footer-section-tittle">
+                <h6>Copyright © 1999-2020 MercadoLiebre S.R.L.</h6>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
